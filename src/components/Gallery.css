@@ -1,0 +1,62 @@
+.gallery{
+    -webkit-column-count:4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-width: 25%;
+    -moz-column-width: 25%;
+    column-width: 25%;
+
+}
+
+.container-checkboxx{
+    display: none;
+}
+.container:hover .container-checkboxx{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 10px;
+    display: block;
+}
+label {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px dotted violet;
+    border-radius: 20px;
+    width: 10rem;
+    height: 10rem;
+    cursor: pointer;
+    font-size: large;
+  }
+  
+  label span {
+    font-weight: lighter;
+    font-size: small;
+    padding-top: 0.5rem;
+  }
+  
+  input {
+    display: none;
+  }
+@media only screen and (max-width: 667px) {
+    .gallery{
+        -webkit-column-count:2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-width: 25%;
+        -moz-column-width: 25%;
+        column-width: 25%;
+    
+    }
+    .container-checkbox{
+        display: none;
+    }
+    .container:hover .container-checkbox{
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 10px;
+        display: block;
+    }
+  }
